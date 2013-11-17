@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css" />
+</head>
+<body>
+	<table cellspacing="0" cellpadding="0">
+			<tr>
+				<td colspan="6">
+					<input type="text" id="monitor" value="0" onkeydown="if(event.keyCode==13) ev();" onclick="ct()"/>
+				</td>
+		</tr>
+		<tr>
+			<td><img class="button" src="img/mca.png" id="mc" onmousedown="on('mc')" onmouseup="off('mc')" onclick="MC()"></td>
+			<td colspan="2"><img id="ce"class="button" src="img/cea.png" width=144px onmousedown="on('ce')" onmouseup="off('ce')" onclick="CE()"></td>
+			<td colspan="2"><img id="c"class="button" src="img/ca.png" width=144px onmousedown="on('c')" onmouseup="off('c')" onclick="clearscreen()"></td>
+			<td><img id="back" src="img/backa.png" class="button" onmousedown="on('back')" onmouseup="off('back')" onclick="del()"></td>
+		</tr>
+		<tr>
+			<td><img id="mr" src="img/mra.png" class="button" onmousedown="on('mr')" onmouseup="off('mr')" onclick="MR()"></td>
+			<td><img id="7" src="img/7a.png" class="button" onmousedown="on('7')" onmouseup="off('7')" onclick="command(7)"></td>
+			<td><img id="8" class="button" src="img/8a.png" onmousedown="on('8')" onmouseup="off('8')" onclick="command(8)"></td>
+			<td><img id="9" class="button" src="img/9a.png" onmousedown="on('9')" onmouseup="off('9')" onclick="command(9)"></td>
+			<td><img id="divid" class="button" src="img/divida.png" onmousedown="on('divid')" onmouseup="off('divid')" onclick="divide()"></td>
+			<td><img id="sqrt" class="button" src="img/sqrta.png" onmousedown="on('sqrt')" onmouseup="off('sqrt')" onclick="sqrts()"></td>
+		</tr>
+		<tr>
+			<td><img id="ms" class="button" src="img/msa.png" onmousedown="on('ms')" onmouseup="off('ms')" onclick="MS()"></td>
+			<td><img id="4" class="button" src="img/4a.png" onmousedown="on('4')" onmouseup="off('4')" onclick="command(4)"></td>
+			<td><img id="5" class="button" src="img/5a.png" onmousedown="on('5')" onmouseup="off('5')" onclick="command(5)"></td>
+			<td><img id="6" class="button" src="img/6a.png" onmousedown="on('6')" onmouseup="off('6')" onclick="command(6)"></td>
+			<td><img id="multiply" class="button" src="img/multiplya.png" onmousedown="on('multiply')" onmouseup="off('multiply')" onclick="times()"></td>
+			<td><img id="percent" class="button" src="img/percenta.png" onmousedown="on('percent')" onmouseup="off('percent')" onclick="persent()"></td>
+		</tr>
+		<tr>
+			<td><img id="m+" class="button" src="img/m+a.png" onmousedown="on('m+')" onmouseup="off('m+')" onclick="Mand()"></td>
+			<td><img id="1" class="button" src="img/1a.png" onmousedown="on('1')" onmouseup="off('1')" onclick="command(1)"></td>
+			<td><img id="2" class="button" src="img/2a.png" onmousedown="on('2')" onmouseup="off('2')" onclick="command(2)"></td>
+			<td><img id="3" class="button" src="img/3a.png" onmousedown="on('3')" onmouseup="off('3')" onclick="command(3)"></td>
+			<td><img id="minus" class="button" src="img/minusa.png" onmousedown="on('minus')" onmouseup="off('minus')" onclick="l_minus()"></td>
+			<td><img id="reciproc" class="button" src="img/reciproca.png" onmousedown="on('reciproc')" onmouseup="off('reciproc')" onclick="reciprocal()"></td>
+		</tr>
+		<tr>
+			<td><img id="m-" class="button" src="img/m-a.png" onmousedown="on('m-')" onmouseup="off('m-')" onclick="Mm()"></td>
+			<td><img id="0" class="button" src="img/0a.png" onmousedown="on('0')" onmouseup="off('0')" onclick="command(0)"></td>
+			<td><img id="negative" class="button" src="img/negativea.png" onmousedown="on('negative')" onmouseup="off('negative')" onclick="negatives()"></td>
+			<td><img id="point" class="button" src="img/pointa.png" onmousedown="on('point')" onmouseup="off('point')" onclick="dot()"></td>
+			<td><img id="and" class="button" src="img/anda.png" onmousedown="on('and')" onmouseup="off('and')" onclick="plus()"></td>
+			<td><img id="equal" class="button" src="img/equala.png" onmousedown="on('equal')" onmouseup="off('equal')" onclick="equals()"></td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>

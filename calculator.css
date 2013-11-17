@@ -1,0 +1,20 @@
+table{
+	background-image:url(img/background.png);
+	width:400px;
+	height:190px;
+	background-repeat:no-repeat;
+	padding-left:15px;
+	padding-bottom:21px;
+	padding-top:15px;
+}
+#monitor{
+	position:relative;
+	padding:8px 13px 8px 13px;
+	background-image:url(img/monitor.png);
+	width:400px;
+	background-repeat:no-repeat;
+	border:none;
+	margin:10px;
+	font-size:40px;
+	text-align:right;
+}
